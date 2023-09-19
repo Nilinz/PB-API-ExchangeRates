@@ -43,5 +43,15 @@ python server.py
 
 The server will start and listen for WebSocket connections on ws://localhost:8080.
 
+### Exchange Command
+
+If a message starts with exchange, the server extracts the number of days specified in the command and fetches currency exchange rates from the PrivatBank API for the specified number of recent days.
+
+```
+exchange <days>
+```
+
+Exchange rates are logged to the exchange_log.txt file, along with a timestamp and the user's name who initiated the command.
+
 
 
