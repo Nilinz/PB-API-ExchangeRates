@@ -36,7 +36,7 @@ ws.onmessage = async (e) => {
                 subscribe.appendChild(elMsg);
             });
         } else {
-            // В іншому випадку вивести повідомлення як текст
+            // Вивести повідомлення як текст
             const elMsg = document.createElement('div');
             elMsg.textContent = message;
             subscribe.appendChild(elMsg);
