@@ -19,3 +19,28 @@ Run the currency exchange rates script with the following command:
 python currency.py <days> [--currencies CURRENCY [CURRENCY ...]] [--output OUTPUT_FILENAME]
 ```
 
+--``currencies``: Specify a list of currencies to fetch (default: EUR and USD).
+--``output``: Specify the output JSON file name (default: currency_rates.json).
+
+```
+python currency.py 5 --currencies EUR USD GBP --output rates.json
+```
+The script will fetch the currency exchange rates and save them to the specified JSON file.
+
+## Running the WebSocket Chat
+
+- Open the index.html file in a web browser.
+ -In the web page, you can type a message in the text input field and click "Send message" to send it to the WebSocket server.
+
+## Running the WebSocket Chat Server
+
+Run the WebSocket chat server with the following command:
+
+```
+python server.py
+```
+
+The server will start and listen for WebSocket connections on ws://localhost:8080.
+
+
+
